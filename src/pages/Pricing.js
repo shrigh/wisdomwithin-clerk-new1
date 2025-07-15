@@ -15,12 +15,11 @@ export default function Pricing() {
         {/* Free Plan */}
         <div style={{
           border: '1px solid #ccc', borderRadius: 8, padding: '1rem',
-          backgroundColor: '#f9f9f9'
-        }}>
+          backgroundColor: '#f9f9f9', textAlign:'center'        }}>
           <h3>Free Plan</h3>
-          <p>Ask 3 questions complimentary</p>
+          <p></p>
           <button onClick={() => navigate('/ask')} style={{
-            backgroundColor: '#ff9800',
+            backgroundColor: '#0070f3',
             color: 'white',
             border: 'none',
             padding: '0.6rem 1.2rem',

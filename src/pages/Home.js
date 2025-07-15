@@ -5,18 +5,18 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <main style={{ maxWidth: 900, margin: '2rem auto', padding: '0 1rem' }}>
+    <main style={{ margin: '0 auto 2rem' }}>
       {/* Hero Section */}
-      <section style={{
+      <section className="bnrCnt" style={{
         textAlign: 'center',
         padding: '4rem 1rem',
         background: 'url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80) no-repeat center/cover',
         color: 'white',
-        borderRadius: 8,
+        borderRadius: 0,
         boxShadow: '0 4px 20px rgb(0 0 0 / 0.3)',
         marginBottom: '3rem'
       }}>
-        <h1 style={{ fontSize: '2.8rem', marginBottom: '1rem', textShadow: '1px 1px 4px rgba(0,0,0,0.7)' }}>
+        <h1 style={{fontSize: '2.8rem', marginBottom: '1rem', marginTop: '2rem', textShadow: '1px 1px 4px rgba(0,0,0,0.7)', display:"inline-block", width:'50%' }}>
           Overcome Life’s Obstacles with Timeless Hindu Wisdom
         </h1>
         <p style={{ fontSize: '1.3rem', maxWidth: 500, margin: '0 auto 2rem', textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
@@ -43,15 +43,15 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section style={{ marginBottom: '3rem' }}>
-        <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#2c3e50' }}>
+      <section className="howPowerCnt" style={{ marginBottom: '3rem', padding: '0 1rem' }}>
+        <h2 className="h2Head">
           How PowerWithin Works
         </h2>
-        <ol style={{ paddingLeft: '1.5rem', lineHeight: 1.7, fontSize: '1.1rem', color: '#444' }}>
-          <li><strong>Ask your real-life question</strong></li>
-          <li><strong>We personalize your answer based on your preferences</strong></li>
-          <li><strong>Receive tailored wisdom: stories, mantras, daily practices</strong></li>
-        </ol>
+        <div className="wrapPointer">
+          <div  className="wrapPointerCnt">Ask your real-life question</div>
+          <div  className="wrapPointerCnt wrapPointerCntMid">We personalize your answer based on your preferences</div>
+          <div  className="wrapPointerCnt">Receive tailored wisdom: stories, mantras, daily practices</div>
+        </div>
       </section>
     </main>
   );

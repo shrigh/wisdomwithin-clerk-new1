@@ -6,7 +6,7 @@ export default function Header() {
   const location = useLocation();
 
   const linkClass = (path) =>
-    location.pathname === path ? { fontWeight: 'bold', textDecoration: 'underline' } : {};
+    location.pathname === path ? { fontWeight: '400', textDecoration: 'underline' } : {};
 
   return (
     <header style={{
@@ -20,8 +20,8 @@ export default function Header() {
         </div>
       </div>
 
-      <nav style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-        <Link to="/" style={linkClass('/')}>How It Works</Link>
+      <nav className="navMenu" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <Link to="/" style={linkClass('/')}>Home</Link>
         <Link to="/quiz" style={linkClass('/quiz')}>Features</Link>
         <Link to="/pricing" style={linkClass('/pricing')}>Pricing</Link>
         <Link to="/ask" style={linkClass('/ask')}>Ask</Link>
