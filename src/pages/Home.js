@@ -5,7 +5,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <main style={{ margin: '0 auto 2rem' }}>
+    <main style={{ margin: '0 auto' }}>
       {/* Hero Section */}
       <section className="bnrCnt" style={{
         textAlign: 'center',
@@ -53,6 +53,14 @@ export default function Home() {
           <div  className="wrapPointerCnt">Receive tailored wisdom: stories, mantras, daily practices</div>
         </div>
       </section>
+
+      <footer className="footerWrap">
+        <div>© 2025 PowerWithin. All rights reserved.</div>
+        <div className="footerCnt">
+          <a href="#" >Terms & Conditions</a>
+          <a href="#" className="pP">Privacy Policy</a>
+        </div>
+      </footer>
     </main>
   );
 }
