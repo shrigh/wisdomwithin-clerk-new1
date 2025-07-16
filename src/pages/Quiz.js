@@ -57,7 +57,8 @@ export default function Quiz() {
   };
 
   return (
-    <main style={{ maxWidth: 700, margin: '2rem auto', padding: '0 1rem' }}>
+    <main style={{  }}>
+    <section style={{ maxWidth: 700, margin: '2rem auto', padding: '0 1rem' }}>
       <h2>Your Journey, Your Way</h2>
       <p>Understanding your inner patterns allows us to personalize your guidance further.</p>
 
@@ -127,6 +128,16 @@ export default function Quiz() {
           Continue to Pricing
         </button>
       </form>
+      </section>
+
+      <footer className="footerWrap">
+        <div>© 2025 PowerWithin. All rights reserved.</div>
+        <div className="footerCnt">
+          <a href="#" >Terms & Conditions</a>
+          <a href="#" className="pP">Privacy Policy</a>
+        </div>
+      </footer>
+
     </main>
   );
 }
